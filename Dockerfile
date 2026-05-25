@@ -1,5 +1,5 @@
-# 使用Java 8作为基础镜像
-FROM openjdk:8-jdk-alpine
+# 使用 Java 21 运行 Spring Boot 应用
+FROM eclipse-temurin:21-jre-alpine
 
 # 设置工作目录
 WORKDIR /app
@@ -25,7 +25,7 @@ ENV TZ=Asia/Shanghai \
 COPY ${JAR_FILE} app.jar
 
 # 暴露应用程序端口
-EXPOSE 8080
+EXPOSE 8088
 
 # 设置启动命令
 ENTRYPOINT ["sh", "-c", "java ${JAVA_OPTS} -Djava.security.egd=file:/dev/./urandom -jar /app/app.jar"] 
