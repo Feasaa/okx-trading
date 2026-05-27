@@ -147,6 +147,12 @@ docker compose logs -f app
 
 ## 常用接口
 
+## 新手教程
+
+- [从 AI 生成策略到回测：新手操作指南](docs/003-20260527-ai-strategy-backtest-workflow.md)
+
+这份教程适合第一次使用本项目的人：先填写策略参数，再让 AI 生成 Java/Ta4j 策略代码，最后通过回测接口验证收益、最大回撤、手续费、滑点和爆仓风险。
+
 ### 策略与 AI 生成
 
 ```bash
